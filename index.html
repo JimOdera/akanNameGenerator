@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name Calculator</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+</head>
+<body class="p-6 bg-gray-900 text-white min-h-screen flex items-center justify-center">
+
+    <div class="container mx-auto mt-2">
+        <h1 class="text-3xl font-bold text-center mb-5">Akan Name Calculator</h1>
+        <p class="text-center mb-10">Calculate your Akan name based on your birthday and gender.</p>
+        <form id="akan-form" class="w-full max-w-md mx-auto p-6 bg-gray-800 rounded-lg shadow-lg">
+            <div class="mb-4">
+                <label for="birth-day" class="block text-gray-400 text-sm font-bold mb-2">Day of Birth:</label>
+                <input type="number" id="birth-day" name="birth-day" min="1" max="31" required
+                    class="bg-gray-700 text-white appearance-none border border-gray-500 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div class="mb-4">
+                <label for="birth-month" class="block text-gray-400 text-sm font-bold mb-2">Month of Birth:</label>
+                <input type="number" id="birth-month" name="birth-month" min="1" max="12" required
+                    class="bg-gray-700 text-white appearance-none border border-gray-500 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div class="mb-4">
+                <label for="birth-year" class="block text-gray-400 text-sm font-bold mb-2">Year of Birth:</label>
+                <input type="number" id="birth-year" name="birth-year" required
+                    class="bg-gray-700 text-white appearance-none border border-gray-500 rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+
+            <div class="mb-4">
+                <label for="gender" class="block text-gray-400 text-sm font-bold mb-2">Gender:</label>
+                <div class="flex items-center">
+                    <input type="radio" id="male" name="gender" value="male" required
+                        class="mr-2 leading-tight text-blue-400">
+                    <label for="male" class="text-sm">Male</label>
+                </div>
+                <div class="flex items-center">
+                    <input type="radio" id="female" name="gender" value="female" required
+                        class="mr-2 leading-tight text-pink-400">
+                    <label for="female" class="text-sm">Female</label>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Calculate Akan Name
+                </button>
+            </div>
+        </form>
+
+        <div id="result" class="w-full max-w-md mx-auto p-6 bg-gray-800 rounded-lg shadow-lg text-center mt-5 text-2xl">
+            <h1>The Result will be displayed here!</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
