@@ -47,6 +47,6 @@ This project was inspired by the rich culture and traditions of the Akan people 
 
 # Contact
 
-If you have any questions or suggestions, please feel free to contact the project maintainers:
+If you have any questions or suggestions, please feel free to contact me:
 
 James Odera - james.nyangoma4@gmail.com
